@@ -1,0 +1,53 @@
+﻿<Window x:Class="Validation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Validation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="0,2*"/>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="0,4*"/>
+            <ColumnDefinition Width="0,1*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="0,1*"/>
+            <RowDefinition Height="0,1*"/>
+            <RowDefinition Height="0,1*"/>
+            <RowDefinition Height="0,1*"/>
+            <RowDefinition Height="0,1*"/>
+            <RowDefinition Height="0,1*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <TextBlock  Name="Number1" Text="Name" Grid.Row="1" Grid.Column="1"
+                 TextAlignment="Left" FontSize="25" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <TextBlock  Name="Number2" Text="BirthDate" Grid.Row="2" Grid.Column="1"
+                 TextAlignment="Left" FontSize="25" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <TextBlock  Name="Number3" Text="Phone Number" Grid.Row="3" Grid.Column="1"
+                 TextAlignment="Left" FontSize="25" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <TextBlock  Name="Number4" Text="Web page" Grid.Row="4" Grid.Column="1"
+                 TextAlignment="Left" FontSize="25" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <TextBlock  Name="Number5" Text="E-mail" Grid.Row="5" Grid.Column="1"
+                 TextAlignment="Left" FontSize="25" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <Button Grid.ColumnSpan="4" Grid.Column="1" Grid.Row="6" Background="SeaGreen" Content="Validate" FontSize="35" VerticalAlignment="Center" Click="Button_Click"/>
+        <TextBox x:Name="ie" Grid.Row="1" Grid.Column="3" FontSize="25" TextChanged="TextBox_TextChanged">
+            <TextBox.ToolTip>
+                <ToolTip>
+                    Click Here
+                </ToolTip>
+            </TextBox.ToolTip>
+        </TextBox>
+        <TextBox Grid.Row="2" Grid.Column="3" FontSize="25" Name="viens" TextChanged="viens_TextChanged"/>
+        <TextBox Grid.Row="3" Grid.Column="3" FontSize="25" Name="divi" TextChanged="divi_TextChanged"/>
+        <TextBox Grid.Row="4" Grid.Column="3" FontSize="25" Name="tris" TextChanged="tris_TextChanged"/>
+        <TextBox Grid.Row="5" Grid.Column="3" FontSize="25" Name="cetri" TextChanged="cetri_TextChanged"/>
+        
+       
+    </Grid>
+</Window>
